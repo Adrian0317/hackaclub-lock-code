@@ -24,6 +24,40 @@ How it works
 - You design the mechanical linkage so that:
   - One stop position = **locked**  
   - The other stop position = **unlocked**
+ 
+Firmware/code
+
+#define LOCK 11
+void setup()
+{
+pinMode(LOCK, OUTPUT);
+
+for(int a=0;a<100;a++)
+
+digitalWrite(LOCK, HIGH);
+
+delayMicroseconds(500);
+
+digitalWrite(LOCK, LOW);
+
+delay(20);
+}
+
+for(int a=0;a<100;a++){
+
+digitalWrite(LOCK, HIGH);
+
+delayMicroseconds(1500);
+
+digitalWrite(LOCK, LOW);
+
+delay(20);
+   }
+}
+voidloop()
+{
+
+}
 
 ## Safety notes
 
